@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crude Booklist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="booklist.css">
+    <script src="booklist.js" defer></script>
+</head>
+<body>
+    <!-- header title -->
+    <header>
+        <div>
+            <h1>Media Record</h1>
+        </div>
+    </header>
+    <!-- ---- -->
+
+    <!-- Search Bar -->
+    <form id="search_bar">
+        <input type="text" placeholder="Search...">
+    </form>
+    <!--  -->
+
+    <!-- Media Selection Form -->
+    <div id='media_container' class='media_container'>
+        <form>
+            <label for="media_select">Select Media Type:</label>
+            <select name="media_select" id="media_select">
+                <option value="book">Book</option>
+                <option value="podcast">Podcast</option>
+                <option value="video">Video</option>
+                <option value="article">Article</option>
+            </select>
+        </form>
+    </div>
+    <!-- ---- -->
+
+    <!-- Books Form -->
+    <div id='books_container' class='books_container form_container'>
+        <form>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label for="author">Author:</label>
+                <input type="text" name="author">
+            </div>
+            <div>
+                <label for="genre">Genre:</label>
+                <input type="text" name="genre">
+            </div>
+            <div>
+                <label for="rating">Rating (0-5):</label>
+                <input type="number" name="rating" min="0" max="5">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- ---- -->
+    <!-- Podcasts Form -->
+    <div id='podcasts_container' class='podcasts_container form_container'>
+        <form>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label for="podcaster">Podcaster:</label>
+                <input type="text" name="podcaster">
+            </div>
+            <div>
+                <label for="genre">Genre:</label>
+                <input type="text" name="genre">
+            </div>
+            <div>
+                <label for="rating">Rating (0-5):</label>
+                <input type="number" name="rating" min="0" max="5">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- ---- -->
+    <!-- Videos Form -->
+    <div id='videos_container' class='videos_container form_container'>
+        <form>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label for="content_creator">Content Creator:</label>
+                <input type="text" name="content_creator">
+            </div>
+            <div>
+                <label for="genre">Genre:</label>
+                <input type="text" name="genre">
+            </div>
+            <div>
+                <label for="rating">Rating (0-5):</label>
+                <input type="number" name="rating" min="0" max="5">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- ---- -->
+    <!-- Articles Form -->
+    <div id='articles_container' class='articles_container form_container'>
+        <form>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label for="author">Author:</label>
+                <input type="text" name="author">
+            </div>
+            <div>
+                <label for="genre">Genre:</label>
+                <input type="text" name="genre">
+            </div>
+            <div>
+                <label for="rating">Rating (0-5):</label>
+                <input type="number" name="rating" min="0" max="5">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- ---- -->
+
+    <!-- Display -->
+    <div id="display" class="display">
+        <form>
+            <label for="display_show">show:</label>
+            <select name="display_show" id="display_show">
+                <option value="books">Books</option>
+                <option value="podcasts">Podcasts</option>
+                <option value="videos">Videos</option>
+                <option value="articles">Articles</option>
+            </select>
+        </form>
+
+        <table id="book_table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        
+        <table id="podcast_table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Podcaster</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <table id="video_table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Content Creator</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <table id="article_table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- ---- -->
+</body>
+</html>

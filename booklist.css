@@ -1,0 +1,188 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('./background.jpg');
+    background-size: cover;
+}
+
+/* Heading Styling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header div {
+    background-color: black;
+    padding: 1em;
+}
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Search Bar Styling */
+#search_bar {
+    margin: 1em;
+}
+
+/* Media Selection Styling */
+#media_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+}
+#media_container label {
+    display: block;
+    margin: 5px 0px;
+}
+
+/* Styling all select inputs and input fields */
+select, input {
+    width: 15em;
+    height: 2em;
+    padding: 0.25em;
+    border-radius: 5px;
+    font-size: 1em;
+    border-width: 1px;
+    opacity: 80%;
+}
+select:focus, input:focus {
+    opacity: 100%;
+}
+
+/* pervasive styling for all labels */
+label {
+    font-size: 0.8em;
+    color: rgb(63, 63, 63);
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+/* General Styling of all forms entries and submit buttons */
+.form_container {
+    margin: 10px 0px;
+}
+.form_container form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 1em;
+    justify-content: center;
+}
+.form_container label {
+    display: block;
+    margin-top: 10px;
+}
+.form_container button {
+    grid-column: 1 / -1;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 1.5em;
+    height: 2.25em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: opacity 300ms ease-in-out;
+    opacity: 85%;
+}
+.form_container button:hover {
+    transition: opacity 300ms ease-in-out;
+    opacity: 100%;
+}
+
+/* Hide podcast, video and article forms */
+#books_container {
+    display: block;
+}
+#podcasts_container, #videos_container, #articles_container {
+    display: none;
+}
+
+/* Styling the display section */
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em 0;
+}
+#display label {
+    display: block;
+    margin: 5px 0px;
+}
+
+#display select {
+    margin-bottom: 2em;
+}
+
+/* Styling the tables */
+#display table {
+    margin: 0 auto;
+    border: 2px solid black;
+    transition: opacity 200ms ease-in-out;
+    opacity: 85%;
+    transition: box-shadow 200ms ease-in-out;
+    box-shadow: none;
+}
+#display table:hover {
+    transition: opacity 200ms ease-in-out;
+    opacity: 100%;
+    transition: box-shadow 200ms ease-in-out;
+    box-shadow: 4px 4px rgb(85, 85, 85);
+}
+#display th {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+#display td, th {
+    border: 0.5px solid rgb(148, 148, 148);
+    text-align: center;
+    padding: 8px 16px;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+    }
+tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+/* hiding the podcast, video and article tables */
+#book_table {
+    display: block;
+}
+#podcast_table, #video_table, #article_table {
+    display: none;
+}
+
+/* styling the delete button */
+.delete {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    background-color: red;
+    padding: 2px 6px;
+    border-radius: 50%;
+    transition: opacity 200ms ease-in-out;
+    opacity: 70%;
+}
+.delete:hover {
+    transition: opacity 200ms ease-in-out;
+    opacity: 100%;
+}
+
+/* styling the alert message */
+.alert {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+}
